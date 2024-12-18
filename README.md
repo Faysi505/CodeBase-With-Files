@@ -32,7 +32,7 @@ Prerequisites:
 make
 ```
 > After write "./sm" to the terminal.
-'''
+```
 ./sm
 ```
 > If you'd like to delete launch files just type "make clean" to terminal.
@@ -54,7 +54,10 @@ make clean
   Выйти из программы - - - - - - - [7]
 _____________________________________________
 ```
-### User input : 4
+### User input : 
+```
+4
+```
 ### Programm output:
 ```
 _____________________________________________
@@ -65,7 +68,10 @@ _____________________________________________
 3. Возраст
 4. Класс
 ```
-### User input: 1
+### User input: 
+```
+1
+```
 ### Programm output:
 ```
 _____________________________________________
