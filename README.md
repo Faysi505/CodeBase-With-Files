@@ -28,12 +28,17 @@ Prerequisites:
 # Running the Program
 
 > To run a program first of all you need to create launch file by typing `make` to the terminal.
-> ```` make ```
+```
+make
+```
 > After write "./sm" to the terminal.
-> ''' ./sm '''
+'''
+./sm
+```
 > If you'd like to delete launch files just type "make clean" to terminal.
-> '''' make clean '''
-
+```
+make clean
+```
 # Example of the communication with a programm.
 
 ### Programm output:
