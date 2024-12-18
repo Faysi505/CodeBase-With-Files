@@ -7,6 +7,9 @@
 > filter list by any information.
 
 
+
+
+
 # Features
 > Accepts specific integers to address user commands to the programm.
 > 
@@ -20,10 +23,11 @@
 
 
 
+
+
 # How to Use
 Prerequisites:
 > Ensure you have a C++ compiler installed on your system.
-
 
 # Running the Program
 
@@ -39,6 +43,11 @@ make
 ```
 make clean
 ```
+
+
+
+
+
 # Example of the communication with a programm.
 
 ### Programm output:
@@ -78,6 +87,9 @@ _____________________________________________
 Список студентов отсортирован!
 _____________________________________________
 ```
+
+
+
 ## License
 `This project is licensed under the MIT License. See the LICENSE file for details.`
 ## Contributions
