@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include "student.h"
 
-// Function to print all students
 void printStudents(struct Student *students, int size) {
     if (size == 0) {
         printf("Нет студентов для отображения.\n");
