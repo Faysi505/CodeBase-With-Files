@@ -24,7 +24,7 @@ void sortStudents(struct Student *students, int size) {
     } else if (sortChoice == 4) {
         compareFunc = compareByClass;
     } else {
-        printf("Неверный выбор!\n");
+        printf("Ошибка\n");
         return;
     }
 

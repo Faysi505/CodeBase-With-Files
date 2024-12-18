@@ -8,7 +8,7 @@
 
 void removeStudent(struct Student **students, int *size, int index) {
     if (index < 0 || index >= *size) {
-        printf("Неверный индекс!\n");
+        printf("Ошибка\n");
         return;
     }
 
