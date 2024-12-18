@@ -90,7 +90,7 @@ _____________________________________________
 
 
 
-## License
+# License
 `This project is licensed under the MIT License. See the LICENSE file for details.`
-## Contributions
+# Contributions
 `Contributions are welcome! If you have suggestions for improvements or find any bugs, please open an issue or submit a pull request.`
