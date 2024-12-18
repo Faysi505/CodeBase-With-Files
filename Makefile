@@ -1,15 +1,21 @@
-CC=gcc
-CFLAGS=-I.
+CC = gcc
+CFLAGS = -I.
 
-.PHONY: clean all
+# Название файла
+TARGET = StudentManager
+# переменная кода
+OBJECTS = main.o
 
-# The default target that gets executed when you run `make` without arguments
-all: main.o
+all: $(TARGET)
 
-# Rule to create the object file from the source code
+# С main.c в main.o
 main.o: main.c
-	$(CC) -c main.c $(CFLAGS)
+	$(CC) -c -o main.o main.c $(CFLAGS)
 
-# Clean up the generated object file
+# Все в файл StudentManager
+$(TARGET): $(OBJECTS)
+	$(CC) -o $(TARGET) $(OBJECTS)
+
+# Clean
 clean:
-	rm -f *.o
+	rm -f *.o $(TARGET)
