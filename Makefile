@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -I.
 
 # Название файла
-TARGET = StudentManager
+TARGET = sm
 # переменная кода
 OBJECTS = main.o
 
@@ -12,7 +12,7 @@ all: $(TARGET)
 main.o: main.c
 	$(CC) -c -o main.o main.c $(CFLAGS)
 
-# Все в файл StudentManager
+# Все в файл sm
 $(TARGET): $(OBJECTS)
 	$(CC) -o $(TARGET) $(OBJECTS)
 
