@@ -43,8 +43,23 @@ make
 ```
 make clean
 ```
-
-
+> Then type inputs that are written on command menu in the program output
+```
+  _____________________________________________ 
+  Введите действие которые хотите сделать:
+  Добавить студента  - - - - - - - [1] 
+  Удалить студента - - - - - - - - [2] 
+  Изменить информацию о студенте - [3] 
+  Отсортировать список - - - - - - [4] 
+  Отфильтровать список - - - - - - [5] 
+  Показать список  - - - - - - - - [6]
+  Выйти из программы - - - - - - - [7]
+_____________________________________________
+```
+> Or just time every step in 1 line. For example:
+```
+Add Alex Gromov 43 Px-22
+```
 
 
 
@@ -90,7 +105,7 @@ _____________________________________________
 
 
 
-## License
+# License
 `This project is licensed under the MIT License. See the LICENSE file for details.`
-## Contributions
+# Contributions
 `Contributions are welcome! If you have suggestions for improvements or find any bugs, please open an issue or submit a pull request.`
