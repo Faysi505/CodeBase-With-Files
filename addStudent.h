@@ -19,7 +19,7 @@ void addStudent(struct Student **students, int *size) {
     printf("Введите возвраст: ");
     fscanf(stdin, "%d", &(*students)[*size - 1].age); 
 
-    printf("Введите класс: ");
+    printf("Введите класс: \n");
     fscanf(stdin, "%49s", (*students)[*size - 1].clas); 
 
     saveStudents(*students, *size);

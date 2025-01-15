@@ -25,7 +25,7 @@ int main() {
         printf("5. Сортировать студентов\n");
         printf("6. Фильтровать студентов\n");
         printf("0. Выход\n");
-        printf("Выберите действие: ");
+        printf("Выберите действие: \n");
         scanf("%d", &choice);
 
         switch (choice) {
@@ -38,7 +38,7 @@ int main() {
             case 3: {
                 int index;
                 printStudents(students, size);  // Удалить студента(отображение)
-                printf("Введите индекс студента для удаления: ");
+                printf("Введите индекс студента для удаления: \n");
                 scanf("%d", &index);
                 removeStudent(&students, &size, index - 1);  // Удалить студента
                 break;
@@ -46,7 +46,7 @@ int main() {
             case 4: {
                 int index;
                 printStudents(students, size);  // Изменить студента(отображение)
-                printf("Введите индекс студента для изменения: ");
+                printf("Введите индекс студента для изменения: \n");
                 scanf("%d", &index);
                 modifyStudent(students, size, index - 1);  // Изменить студента
                 break;
