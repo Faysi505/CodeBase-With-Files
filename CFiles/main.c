@@ -11,7 +11,7 @@
 #include "filterStudents.h"
 #include "printStudents.h"
 
-int main() {
+int main(int ) {
     struct Student *students = NULL;
     int size = loadStudents(&students);  // Из файла в код
     int choice;
