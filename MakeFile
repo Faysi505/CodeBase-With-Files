@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-Iheaders
+CFLAGS=-headers
 
-.PHONY: clean all
+.PHONY: all clean
 
 all: student_manager
 
