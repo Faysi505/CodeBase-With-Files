@@ -1,11 +1,15 @@
-CC = gcc
-CFLAGS = -I./headers
+CC=gcc
+CFLAGS=-Iheaders
 
-all: main.o
-	$(CC) main.o -o main.o
+.PHONY: clean all
 
-main.o: main.c ./headers/*.h
+all: student_manager
+
+student_manager: main.o
+	$(CC) -o student_manager main.o $(CFLAGS)
+
+main.o: main.c headers/studentStruct.h headers/studentInput.h headers/studentOperations.h headers/studentFilter.h headers/studentSort.h headers/studentPrint.h
 	$(CC) -c main.c $(CFLAGS)
 
 clean:
-	rm -f *.o
+	rm -f *.o student_manager
