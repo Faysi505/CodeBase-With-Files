@@ -41,13 +41,13 @@ int main(int argc, char *argv[]) {
         modifyStudent(&students, size, atoi(argv[2]) - 1, argv[3], argv[4], atoi(argv[5]), argv[6]);
     } else if (strcmp(operation, "sort") == 0) {
         if (argc != 3) {
-            printf("./main.o sort <criteria>\nCriteria: name, surname, age, class\n");
+            printf("./main.o sort <criteria>\n");
             return 1;
         }
         sortStudents(students, size, argv[2]);
     } else if (strcmp(operation, "filter") == 0) {
         if (argc != 3) {
-            printf("./main.o filter <criteria>\nCriteria: name=<value>, surname=<value>, age=<value>, class=<value>\n");
+            printf("./main.o filter <criteria>\n");
             return 1;
         }
         filterStudents(students, size, argv[2]);
