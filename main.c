@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 
     if (strcmp(operation, "add") == 0) {
         if (argc != 6) {
-            printf("./main.o add <name> <surname> <age> <class>\n");
+            printf("./main.o add .name. .surname. .age. .class.\n");
             return 1;
         }
         addStudent(&students, &size, argv[2], argv[3], atoi(argv[4]), argv[5]);
@@ -35,19 +35,19 @@ int main(int argc, char *argv[]) {
         removeStudent(&students, &size, atoi(argv[2]) - 1);
     } else if (strcmp(operation, "modify") == 0) {
         if (argc != 7) {
-            printf("./main.o modify <index> <name> <surname> <age> <class>\n");
+            printf("./main.o modify .index. .name. .surname. .age. .class.\n");
             return 1;
         }
         modifyStudent(&students, size, atoi(argv[2]) - 1, argv[3], argv[4], atoi(argv[5]), argv[6]);
     } else if (strcmp(operation, "sort") == 0) {
         if (argc != 3) {
-            printf("./main.o sort <criteria>\n");
+            printf("./main.o sort .criteria.\n");
             return 1;
         }
         sortStudents(students, size, argv[2]);
     } else if (strcmp(operation, "filter") == 0) {
         if (argc != 3) {
-            printf("./main.o filter <criteria>\n");
+            printf("./main.o filter .criteria.\n");
             return 1;
         }
         filterStudents(students, size, argv[2]);
