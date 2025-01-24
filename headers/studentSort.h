@@ -5,6 +5,7 @@
 #include <string.h>
 #include "studentStruct.h"
 
+// сравнить*
 int compareByName(const void *a, const void *b) {
     return strcmp(((struct Student *)a)->name, ((struct Student *)b)->name);
 }
@@ -21,6 +22,7 @@ int compareByClass(const void *a, const void *b) {
     return strcmp(((struct Student *)a)->className, ((struct Student *)b)->className);
 }
 
+// мейн
 void sortStudents(struct Student *students, int size, const char *criteria) {
     if (strcmp(criteria, "name") == 0) {
         qsort(students, size, sizeof(struct Student), compareByName);
@@ -35,4 +37,4 @@ void sortStudents(struct Student *students, int size, const char *criteria) {
     }
 }
 
-#endif // STUDENT_SORT_H
+#endif 

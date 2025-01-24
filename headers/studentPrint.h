@@ -10,4 +10,4 @@ void printStudents(struct Student *students, int size) {
     }
 }
 
-#endif // STUDENT_PRINT_H
+#endif 

@@ -27,4 +27,4 @@ void saveStudents(struct Student *students, int size) {
     fclose(file);
 }
 
-#endif // STUDENT_INPUT_H
+#endif 

@@ -21,4 +21,4 @@ void filterStudents(struct Student *students, int size, const char *criteria) {
     }
 }
 
-#endif // STUDENT_FILTER_H
+#endif 
