@@ -24,7 +24,7 @@ void removeStudent(struct Student **students, int *size, int index) {
     saveStudents(*students, *size);
 }
 
-void modifyStudent(struct Student *students, int size, int index, const char *name, const char *surname, int age, const char *className) {
+void modifyStudent(struct Student *students, int size, int index, const char *name, const char *surname, int *age, const char *className) {
     if (index < 0 || index >= size) return;
     strcpy(students[index].name, name);
     strcpy(students[index].surname, surname);
